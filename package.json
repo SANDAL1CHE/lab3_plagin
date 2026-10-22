@@ -14,13 +14,13 @@
   "contributes": {
     "commands": [
       {
-        "command": "my-first-extension.helloWorld",
+        "command": "cpp-autotest.runManual",
         "title": "run tests"
       }
     ],
     "keybindings": [
       {
-        "command": "my-first-extension.helloWorld",
+        "command": "cpp-autotest.runManual",
         "key": "ctrl+alt+t"
       }
     ]
