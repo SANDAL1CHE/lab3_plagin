@@ -11,7 +11,9 @@ export function activate(context: vscode.ExtensionContext) {
         }
 
         const workspaceFolders = vscode.workspace.workspaceFolders;
-        if (!workspaceFolders || workspaceFolders.length === 0) return;
+        if (!workspaceFolders || workspaceFolders.length === 0) {
+            return;
+        }
 
         const rootPath = workspaceFolders[0].uri.fsPath;
         const command = 'cmake --build build && ctest --test-dir build --output-on-failure';
