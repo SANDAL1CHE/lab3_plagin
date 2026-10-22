@@ -29,3 +29,9 @@ export function activate(context: vscode.ExtensionContext) {
 
     context.subscriptions.push(onSave);
 }
+
+export function deactivate() {
+    if (testTerminal) {
+        testTerminal.dispose();
+    }
+}
