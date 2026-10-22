@@ -21,7 +21,8 @@ export function activate(context: vscode.ExtensionContext) {
         if (!testTerminal || testTerminal.exitStatus !== undefined) {
             testTerminal = vscode.window.createTerminal({
                 name: "C++ AutoTest",
-                cwd: rootPath
+                cwd: rootPath,
+                shellPath: "cmd.exe"
             });
         }
 
